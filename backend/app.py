@@ -1,9 +1,10 @@
 
-# Import necessary libraries
+from pathlib import Path
+
+import joblib
 import numpy as np
-import joblib  # For loading the serialized model
-import pandas as pd  # For data manipulation
-from flask import Flask, request, jsonify  # For creating the Flask API
+import pandas as pd
+from flask import Flask, jsonify, request
 
 # Initialize Flask app with a name
 superkart_api = Flask("SuperKart")
